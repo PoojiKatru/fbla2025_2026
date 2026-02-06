@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Businesses | LocalBoost</title>
+    <title>Explore Businesses | BizFinder</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -536,7 +536,7 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <a href="/" class="nav-logo">LocalBoost</a>
+            <a href="/" class="nav-logo">BizFinder</a>
             <ul class="nav-links">
                 <li><a href="/explore" class="active">Explore</a></li>
                 <li><a href="/deals">Deals</a></li>
@@ -680,7 +680,7 @@
             }
 
             // Load favorites from localStorage
-            const storedFavorites = localStorage.getItem('localboost_favorites');
+            const storedFavorites = localStorage.getItem('BizFinder_favorites');
             if (storedFavorites) {
                 favorites = new Set(JSON.parse(storedFavorites));
             }
@@ -914,7 +914,7 @@
             }
 
             // Save to localStorage
-            localStorage.setItem('localboost_favorites', JSON.stringify([...favorites]));
+            localStorage.setItem('BizFinder_favorites', JSON.stringify([...favorites]));
 
             // Animate
             gsap.fromTo(btn, { scale: 1.3 }, { scale: 1, duration: 0.3, ease: 'back.out' });
